@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wizard Coffee Break</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+        
+        body {
+            background-color: #ffffff;
+            margin: 0;
+            padding: 20px;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .flyer {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: rgb(255, 255, 255);
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(255, 255, 255, 0.24);
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #4186e0, #ffffff);
+            color: rgba(0, 0, 0, 0.966);
+            padding: 25px 20px 20px;
+            text-align: center;
+            position: relative;
+        }
+        
+        .logo-title-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+        
+        .logo {
+            height: 60px;
+            filter: drop-shadow(0 2px 4px rgba(250, 250, 250, 0.192));
+        }
+        
+        .header-text {
+            text-align: left;
+        }
+        
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.8rem;
+            margin: 0;
+            letter-spacing: 1px;
+            text-shadow: 0 2px 4px rgba(245, 243, 243, 0.774);
+            line-height: 1.2;
+        }
+        
+        .header h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            margin: 5px 0 0;
+            font-weight: 400;
+            opacity: 0.9;
+        }
+        
+        .price-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .price-table th {
+            background-color: #4186e0;
+            color: #fc0707;
+            padding: 15px;
+            text-align: left;
+            font-size: 1.1rem;
+        }
+        
+        .price-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ffffff;
+        }
+        
+        .price-table tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+        
+        .price-table tr:hover {
+            background-color:#ffffff;
+        }
+        
+        .price {
+            font-weight: bold;
+            color: #000000;
+            text-align: right;
+        }
+        
+        .category {
+            font-weight: bold;
+            color: ;
+            background-color: #4186e0 !important;
+        }
+        
+        .footer {
+            background-color: #ffffff;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="flyer">
+        <div class="header">
+            <div class="logo-title-container">
+                <img src="https://cdn.wizard.com.br/wp-content/uploads/sites/1259/2021/01/26143527/Logomarca-Wizard-2048x766-1.png" 
+                     alt="Wizard" 
+                     class="logo">
+                <div class="header-text">
+                    <h1>COFFEE BREAK</h1>
+                    <h2>Preços Coffee</h2>
+                </div>
+            </div>
+        </div>
+        
+        <table class="price-table">
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="category">
+                    <td colspan="2">Bebidas Quentes</td>
+                </tr>
+                <tr>
+                    <td>Café Cremoso</td>
+                    <td class="price">R$ 8,50</td>
+                </tr>
+                <tr>
+                    <td>Café Espresso</td>
+                    <td class="price">R$ 8,50</td>
+                </tr>
+                
+                <tr class="category">
+                    <td colspan="2">Doces & Chocolates</td>
+                </tr>
+                <tr>
+                    <td>Ferrero Rocher</td>
+                    <td class="price">R$ 12,00</td>
+                </tr>
+                <tr>
+                    <td>Kinder Ovo</td>
+                    <td class="price">R$ 12,00</td>
+                </tr>
+                <tr>
+                    <td>Nutella B-Ready</td>
+                    <td class="price">R$ 5,50</td>
+                </tr>
+                <tr>
+                    <td>Frutella</td>
+                    <td class="price">R$ 4,50</td>
+                </tr>
+                <tr>
+                    <td>Confeito Caixa Vermelha</td>
+                    <td class="price">R$ 2,50</td>
+                </tr>
+                
+                <tr class="category">
+                    <td colspan="2">Salgados</td>
+                </tr>
+                <tr>
+                    <td>Batata</td>
+                    <td class="price">R$ 16,50</td>
+                </tr>
+                <tr>
+                    <td>Salgadinho Grande</td>
+                    <td class="price">R$ 12,00</td>
+                </tr>
+                <tr>
+                    <td>Salgadinho Pequeno</td>
+                    <td class="price">R$ 6,00</td>
+                </tr>
+                
+                <tr class="category">
+                    <td colspan="2">Bebidas Frias</td>
+                </tr>
+                <tr>
+                    <td>Coca Lata</td>
+                    <td class="price">R$ 6,00</td>
+                </tr>
+                <tr>
+                    <td>Refrigerante Mini</td>
+                    <td class="price">R$ 4,50</td>
+                </tr>
+                <tr>
+                    <td>Suco</td>
+                    <td class="price">R$ 3,50</td>
+                </tr>
+                
+                <tr class="category">
+                    <td colspan="2">Balas & Gomas</td>
+                </tr>
+                <tr>
+                    <td>Mentos</td>
+                    <td class="price">R$ 5,00</td>
+                </tr>
+                <tr>
+                    <td>Chiclete Mentos</td>
+                    <td class="price">R$ 2,50</td>
+                </tr>
+                <tr>
+                    <td>Fini 35g</td>
+                    <td class="price">R$ 4,00</td>
+                </tr>
+                <tr>
+                    <td>Fini 15g</td>
+                    <td class="price">R$ 2,00</td>
+                </tr>
+            </tbody>
+        </table>
+        
+        <div class="footer">
+            Consulte-nos sobre combos especiais para eventos! • (XX) XXXX-XXXX
+        </div>
+    </div>
+</body>
+</html>
+
